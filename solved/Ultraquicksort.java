@@ -1,7 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-public class ultraquicksort {
+public class Ultraquicksort {
     // for each number, count how many numbers on the left are bigger, and how many numbers on the right are smaller
     // they have to 'switch' with this number
 
@@ -25,7 +25,7 @@ public class ultraquicksort {
     }
 
     public static void main(String[] args) {
-        ultraquicksort sol = new ultraquicksort();
+        Ultraquicksort sol = new Ultraquicksort();
         BufferedReader scan = new BufferedReader(new InputStreamReader(System.in));
         int size = 0;
         try {

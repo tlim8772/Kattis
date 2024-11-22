@@ -4,3 +4,5 @@ failed/*
 Max Flow Algos/.vscode
 Max Flow Algos/*.exe
 Max Flow Algos/*.in
+*.in
+*.out

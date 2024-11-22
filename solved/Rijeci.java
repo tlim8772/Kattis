@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class rijeci {
+public class Rijeci {
     static long[] helper(int k) {
         if (k == 0) {
             return new long[] {1, 0};

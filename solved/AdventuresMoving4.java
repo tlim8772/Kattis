@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class adventuresMoving4 {
+public class AdventuresMoving4 {
     Integer[][] dp;
 
     int helper(int i, int fuel, ArrayList<Integer> stations, ArrayList<Integer> prices, int distance) {
@@ -23,7 +23,7 @@ public class adventuresMoving4 {
     }
 
     public static void main(String[] args) {
-        adventuresMoving4 sol = new adventuresMoving4();
+        AdventuresMoving4 sol = new AdventuresMoving4();
         sol.dp = new Integer[101][201];
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int distance = 0;

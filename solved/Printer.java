@@ -2,7 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class printer {
+public class Printer {
     static int solve(int n) {
         double x = Math.log((double) n) / Math.log(2.0);
         return 1 + (int) Math.ceil(x);

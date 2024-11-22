@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pivot {
+public class Pivot {
     int[] leftMax(int[] array) {
         int[] out = new int[array.length];
         int currMax = -999999999;
@@ -42,7 +42,7 @@ public class pivot {
             array[i] = scanner.nextInt();
         }
         scanner.close();
-        int ans = new pivot().countPossiblePivots(array);
+        int ans = new Pivot().countPossiblePivots(array);
         System.out.println(ans);
     }
 }

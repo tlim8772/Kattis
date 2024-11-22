@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
-public class airconditioned {
+public class Airconditioned {
     // greedy solution
     static int solve(int[][] minions) {
         Arrays.sort(minions, (x, y) -> x[0] - y[0]);

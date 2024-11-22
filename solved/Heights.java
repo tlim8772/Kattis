@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class heights {
+public class Heights {
     int stepsTaken(int[] students) {
         AVLnode root = new AVLnode(students[0]);
         int steps = 0;
@@ -12,7 +12,7 @@ public class heights {
     }
 
     public static void main(String[] args) {
-        heights sol = new heights();
+        Heights sol = new Heights();
         Scanner scan = new Scanner(System.in);
         int size = scan.nextInt();
         for (int i = 0; i < size; i ++) {

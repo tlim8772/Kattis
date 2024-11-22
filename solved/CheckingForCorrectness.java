@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class checkingforcorrectness {
+public class CheckingForCorrectness {
     long fastModuloExpo(long base, long power) {
         if (power == 1) {
             return base % 10000;
@@ -35,7 +35,7 @@ public class checkingforcorrectness {
     }
 
     public static void main(String[] args) {
-        checkingforcorrectness sol = new checkingforcorrectness();
+        CheckingForCorrectness sol = new CheckingForCorrectness();
         Scanner scanner = new Scanner(System.in);
         do {
             long a = scanner.nextLong();
