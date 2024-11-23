@@ -26,29 +26,31 @@ public:
         vector<bool> visited(n, false);
         q.push(s);
         while (!q.empty()) {
-           int len = q.size();
-           for (int i = 0; i < len; i ++) {
-               int src = q.front(); q.pop();
-               if (visited[src]) {
+            int len = q.size();
+            for (int i = 0; i < len; i ++) {
+                int src = q.front(); q.pop();
+                
+                // nodes can be placed multiple times
+                if (visited[src]) {
                     len --; // MUST REMEMBER TO MINUS :(((
                     continue;
-               }
-               visited[src] = true;
-               q.push(src);
-               if (src == t) {
+                }
+                visited[src] = true;
+                q.push(src);
+                if (src == t) {
                     return true;
-               }
-           }
+                }
+            }
            
-           for (int i = 0; i < len; i ++) {
-               int src = q.front(); q.pop();
-               for (const auto& [key, value] : capacities[src]) {
-                   if (!visited[key] && value > 0) {
-                       adjList[key].push_back(src);
-                       q.push(key);
-                   }
-               }
-           }
+            for (int i = 0; i < len; i ++) {
+                int src = q.front(); q.pop();
+                for (const auto& [key, value] : capacities[src]) {
+                    if (!visited[key] && value > 0) {
+                        adjList[key].push_back(src);
+                        q.push(key);
+                    }
+                } 
+            }
             
         }
         return false;

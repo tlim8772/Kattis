@@ -17,5 +17,5 @@ def generate2(n):
     for i in range(n - 1):
         file.write('%d %d %d\n' % (i, i + 1, random.randint(1, 10)))
 
-generate(300)
+generate(1000)
 #generate2(50000)
