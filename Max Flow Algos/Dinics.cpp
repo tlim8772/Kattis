@@ -124,10 +124,11 @@ int main() {
         dn.addEdge(src, dest, c);
     }
     
-    auto start = std::chrono::high_resolution_clock::now();
+    //auto start = std::chrono::high_resolution_clock::now();
     int ans = dn.maxFlow();
-    auto end = std::chrono::high_resolution_clock::now();
-    chrono::duration<double> duration = end - start;
-    cout << ans  << " Time: " << duration.count() << endl;
+    cout << ans << endl;
+    //auto end = std::chrono::high_resolution_clock::now();
+    //chrono::duration<double> duration = end - start;
+    //cout << ans  << " Time: " << duration.count() << endl;
     
 }

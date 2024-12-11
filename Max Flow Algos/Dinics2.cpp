@@ -112,3 +112,16 @@ public:
         return flow;
     }
 };
+
+int main() {
+    int N, S, T, m;
+    cin >> N >> S >> T >> m;
+    Dinics dn(N, S, T);
+    for (int i = 0; i < m; i ++) {
+        int s, d, c;
+        cin >> s >> d >> c;
+        dn.addEdge(s, d, c);
+    }
+
+    cout << dn.maxFlow() << '\n';
+}
