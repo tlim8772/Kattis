@@ -1,9 +1,11 @@
-TestStuff/*
-failed/*
-.vscode/*
+TestStuff/
+failed/
+.vscode/
 Max Flow Algos/.vscode
 Max Flow Algos/*.exe
 Max Flow Algos/*.in
 *.in
 *.out
 *.ans
+test
+test.cpp
