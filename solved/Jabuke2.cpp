@@ -5,7 +5,7 @@ using Pair = tuple<int, int>;
 // T.C of sol is O(G(R + S)), so process each query in O(R + S)
 // take 1 row, we want to know the closest left point for col y, 
 // we have ana array, where array[i] is the closest left point for col i on that row
-// update is O(R), but we do it for 1 row only
+// update is O(S), but we do it for 1 row only
 
 int R, S, G;
 vector<vector<char>> grid;
